@@ -1,0 +1,49 @@
+.header,
+.logoAndNavigation,
+.menuTrigger,
+.cartAndProfile,
+.menuTriggerAndLogo {
+    display: flex;
+    align-items: center;
+}
+
+.cartAndProfile,
+.menuTriggerAndLogo {
+    gap: 1rem;
+}
+
+.header.mobile {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.menuTrigger {
+    flex-direction: column;
+}
+
+.header.desktop {
+    display: none;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 64rem;
+}
+
+.logoAndNavigation {
+    gap: 4rem;
+}
+
+
+@media screen and (min-width: 64rem) {
+    .header.mobile {
+        display: none;
+    }
+
+    .header.desktop {
+        display: flex;
+    }
+}
