@@ -1,0 +1,27 @@
+.cart {
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    opacity: 0;
+    left: 0;
+    top: 4rem;
+    visibility: hidden;
+    transition: 250ms ease-out;
+    padding: 0.5rem;
+}
+
+.cart.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cartContent{
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.cartHeader{
+    padding: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--neutral-grayish-blue);
+}

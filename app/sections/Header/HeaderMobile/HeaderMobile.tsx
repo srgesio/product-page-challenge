@@ -1,9 +1,9 @@
 
 import styles from '../Header.module.css'
 import Logo from '../../../components/Icons/Logo'
-import CartIcon from '../../../components/Icons/CartIcon'
 import Image from 'next/image'
 import Drawer from '@/app/components/Drawer'
+import Cart from '@/app/components/Cart'
 
 export default function HeaderMobile() {
   return (
@@ -17,7 +17,7 @@ export default function HeaderMobile() {
       </div>
       <div className={styles.cartAndProfile}>
         <div className={styles.cart}>
-          <CartIcon />
+          <Cart />
         </div>
         <div className={styles.profile}>
           <Image alt='Profile Image' src={'/image-avatar.png'} width={24} height={24} />

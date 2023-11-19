@@ -1,9 +1,9 @@
 
 import styles from '../Header.module.css'
 import Logo from '../../../components/Icons/Logo'
-import CartIcon from '../../../components/Icons/CartIcon'
 import Image from 'next/image'
 import Navigation from '@/app/components/Navigation'
+import Cart from '@/app/components/Cart'
 
 export default function HeaderDesktop() {
 
@@ -20,7 +20,7 @@ export default function HeaderDesktop() {
                 </div>
                 <div className={styles.cartAndProfile}>
                     <div className={styles.cart}>
-                        <CartIcon />
+                        <Cart />
                     </div>
                     <div className={styles.profile}>
                         <Image alt='Profile Image' src={'/image-avatar.png'} width={48} height={48} />
