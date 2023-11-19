@@ -1,5 +1,5 @@
 
-import Header from './components/Header/Header'
+import Header from './sections/Header'
 import styles from './page.module.css'
 
 export default function ProductPage() {

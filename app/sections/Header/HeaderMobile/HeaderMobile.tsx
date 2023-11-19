@@ -1,18 +1,16 @@
 
 import styles from '../Header.module.css'
-import Logo from '../../Icons/Logo'
-import MenuIcon from '../../Icons/MenuIcon'
-import CartIcon from '../../Icons/CartIcon'
+import Logo from '../../../components/Icons/Logo'
+import CartIcon from '../../../components/Icons/CartIcon'
 import Image from 'next/image'
+import Drawer from '@/app/components/Drawer'
 
 export default function HeaderMobile() {
   return (
     <div className={`${styles.header} ${styles.mobile}`}>
       <div className={styles.menuTriggerAndLogo}>
+        <Drawer />
 
-        <div className={styles.menuTrigger}>
-          <MenuIcon />
-        </div>
         <div className={styles.logo}>
           <Logo />
         </div>

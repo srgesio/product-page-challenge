@@ -1,0 +1,23 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.menuItem {
+    font-weight: 700;
+    color: var(--neutral-black);
+}
+
+@media screen and (min-width: 64rem) {
+    .navigation {
+        flex-direction: row;
+    }
+
+    .menuItem {
+        color: var(--neutral-dark-grayish-blue);
+        font-weight: 400;
+
+    }
+}

@@ -26,17 +26,15 @@
     justify-content: center;
 }
 
-.container {
+.headerContainer{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 64rem;
+    padding: 1.5rem 0;
 }
 
 .logoAndNavigation {
     gap: 4rem;
 }
-
 
 @media screen and (min-width: 64rem) {
     .header.mobile {
@@ -45,5 +43,12 @@
 
     .header.desktop {
         display: flex;
+    }
+
+    .cartAndProfile{
+        gap: 2rem;
+    }
+    .headerContainer{
+        border-bottom: 1px solid var(--neutral-grayish-blue);
     }
 }

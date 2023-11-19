@@ -1,24 +1,21 @@
 
 import styles from '../Header.module.css'
-import Logo from '../../Icons/Logo'
-import CartIcon from '../../Icons/CartIcon'
+import Logo from '../../../components/Icons/Logo'
+import CartIcon from '../../../components/Icons/CartIcon'
 import Image from 'next/image'
+import Navigation from '@/app/components/Navigation'
 
 export default function HeaderDesktop() {
+
     return (
         <div className={`${styles.header} ${styles.desktop}`}>
-            <div className={styles.container}>
+            <div className={`${styles.headerContainer} container`}>
 
                 <div className={styles.logoAndNavigation}>
                     <div className={styles.logo}>
                         <Logo />
                     </div>
-                    <nav className={styles.navigation}>
-                        <span> item 1</span>
-                        <span> item 2</span>
-                        <span> item 3</span>
-                        <span> item 4</span>
-                    </nav>
+                    <Navigation />
 
                 </div>
                 <div className={styles.cartAndProfile}>
@@ -26,7 +23,7 @@ export default function HeaderDesktop() {
                         <CartIcon />
                     </div>
                     <div className={styles.profile}>
-                        <Image alt='Profile Image' src={'/image-avatar.png'} width={24} height={24} />
+                        <Image alt='Profile Image' src={'/image-avatar.png'} width={48} height={48} />
                     </div>
                 </div>
             </div>
