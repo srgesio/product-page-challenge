@@ -29,11 +29,23 @@
 .headerContainer{
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
 }
 
 .logoAndNavigation {
     gap: 4rem;
+}
+
+.profile{
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms ease-in-out;
+}
+.profile:hover{
+    border: 2px solid var(--primary);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 64rem) {
@@ -50,5 +62,11 @@
     }
     .headerContainer{
         border-bottom: 1px solid var(--neutral-grayish-blue);
+    }
+    .profile{
+        border: 3px solid transparent;
+    }
+    .profile:hover{
+        border: 3px solid var(--primary);
     }
 }

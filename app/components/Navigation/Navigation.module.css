@@ -8,6 +8,8 @@
 .menuItem {
     font-weight: 700;
     color: var(--neutral-black);
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 64rem) {
@@ -18,6 +20,14 @@
     .menuItem {
         color: var(--neutral-dark-grayish-blue);
         font-weight: 400;
+        height: 4.5rem;
+        border-bottom: 0.188rem solid transparent;
+        transition: 250ms ease-out;
+
+    }
+
+    .menuItem:hover {
+        border-bottom: 0.188rem solid var(--primary);
 
     }
 }
