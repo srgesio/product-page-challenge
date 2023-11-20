@@ -18,10 +18,27 @@
 .cartContent{
     border-radius: 1rem;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    background: var(--neutral-white);
 }
 
 .cartHeader{
     padding: 1rem;
     font-weight: 700;
     border-bottom: 1px solid var(--neutral-grayish-blue);
+}
+
+.cartEmptyBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    justify-content: center;
+}
+
+@media screen and (min-width: 64rem){
+    .cart{
+        left: unset;
+        right: -4rem;
+        max-width: 20rem;
+    }
 }

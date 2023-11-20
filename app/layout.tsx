@@ -1,3 +1,4 @@
+import { ProductProvider } from './contexts/ProductPageContext'
 import './globals.css'
 
 export default function RootLayout({
@@ -10,7 +11,11 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body>{children}</body>
+      <body>
+        <ProductProvider>
+          {children}
+        </ProductProvider>
+      </body>
     </html>
   )
 }

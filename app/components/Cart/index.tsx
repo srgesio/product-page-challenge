@@ -5,6 +5,7 @@ import CartIcon from "../Icons/CartIcon";
 
 export default function Cart() {
     const [isCartOpen, setIsCartOpen] = useState(false)
+    const isEmpty = true
     const modalRef = useRef<HTMLDivElement>(null)
     function toggleCart() {
         setIsCartOpen(!isCartOpen)
@@ -34,14 +35,19 @@ export default function Cart() {
                 <CartIcon />
             </div>
 
-            <div className={`${styles.cart} ${isCartOpen ? styles.open : ''}`} ref={modalRef}>
+            <div className={`${styles.cart} ${isCartOpen ? styles.open : ''} ${isEmpty ? styles.empty : ''}`} ref={modalRef}>
                 <div className={styles.cartContent}>
 
                     <div className={styles.cartHeader}>
                         <span>Cart</span>
                     </div>
                     <div className={styles.cartBody}>
-                        <span>Your cart is empty.</span>
+                        {isEmpty && <div className={styles.cartEmptyBody}>
+                            <span>
+
+                                Your cart is empty.
+                            </span>
+                        </div>}
                     </div>
                 </div>
             </div>
