@@ -1,0 +1,39 @@
+
+.pricingContainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sellingPriceAndDiscount{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sellingPrice{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.discount{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: var(--primary-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.listPrice{
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: var(--neutral-dark-grayish-blue);
+}

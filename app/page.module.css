@@ -3,3 +3,10 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+.productInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}

@@ -1,5 +1,6 @@
 import { ProductProvider } from './contexts/ProductPageContext'
 import './globals.css'
+import Header from './sections/Header'
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
       </head>
       <body>
         <ProductProvider>
+          <Header />
           {children}
         </ProductProvider>
       </body>
