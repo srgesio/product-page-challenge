@@ -13,7 +13,6 @@ export function Form() {
         const quantity = event.currentTarget.quantity.value
         setProductsOnCart((prev) => [...prev, { ...product, quantity }])
     }
-    console.log("==>", productsOnCart)
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
             <Quantity />

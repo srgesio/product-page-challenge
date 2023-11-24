@@ -19,6 +19,8 @@ export function Gallery() {
                     slidesPerView={1}
                     modules={[Navigation]}
                     navigation
+
+                    pagination={{ clickable: true }}
                     loop
 
                 >

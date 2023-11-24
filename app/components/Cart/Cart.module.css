@@ -15,7 +15,36 @@
     visibility: visible;
 }
 
+.cartTrigger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: var(--neutral-white);
+
+}
+.cartTriggerCount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    background: var(--primary);
+    color: var(--neutral-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+
+}
 .cartContent{
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
     background: var(--neutral-white);
@@ -35,10 +64,76 @@
     justify-content: center;
 }
 
+.cartBodyContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-height: 20rem;
+    overflow-y: auto;
+}
+.cartList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cartItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.cartItemImage{
+    border-radius: 0.5rem;
+
+}
+
+.cartItemRemoveButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--neutral-grayish-blue);
+    transition: 250ms ease-out;
+    border: none;
+
+}
+
+.cartItemRemoveButton:hover{
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.cartItemInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.cartItemPrices{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cartItemPriceTotal{
+    font-weight: 700;
+    color: var(--neutral-black);
+}
+.cartFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
 @media screen and (min-width: 64rem){
     .cart{
         left: unset;
         right: -4rem;
-        max-width: 20rem;
+        max-width: 25rem;
     }
 }

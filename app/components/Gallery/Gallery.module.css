@@ -49,7 +49,6 @@
     cursor: pointer;
 }
 
-
 @media screen and (min-width: 64rem) {
     .gallery {
         display: none;
