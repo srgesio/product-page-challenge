@@ -5,11 +5,12 @@ import { Brand } from './components/Brand'
 import { ProductName } from './components/ProductName'
 import { ProductDescription } from './components/ProductDescription'
 import { Pricing } from './components/Pricing'
+import { Form } from './components/Form'
 
 export default function ProductPage() {
   return (
     <main className={styles.main}>
-      <div className={styles.productPageContent}>
+      <div className={`${styles.productPageContent}`}>
         <div className={styles.gallery}>
 
           <Gallery />
@@ -20,6 +21,7 @@ export default function ProductPage() {
 
           <ProductDescription />
           <Pricing />
+          <Form />
         </div>
 
       </div>

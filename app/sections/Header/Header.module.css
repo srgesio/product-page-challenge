@@ -12,6 +12,10 @@
     gap: 1rem;
 }
 
+.cart{
+    color: var(--neutral-dark-grayish-blue);
+}
+
 .header.mobile {
     justify-content: space-between;
     padding: 1rem 1.5rem;
