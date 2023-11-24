@@ -32,11 +32,18 @@
     background: var(--neutral-white);
 }
 
-.galleryImage,
+
 .productSelectedImage,
 .thumbnailImage {
     width: 100%;
     height: auto;
+    transition: 250ms ease-out;
+}
+
+.galleryImage{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
     transition: 250ms ease-out;
 }
 
@@ -47,6 +54,56 @@
 
 .thumbnail:hover .thumbnailImage {
     cursor: pointer;
+}
+
+.controlGallery{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+    top: 0;
+    height: 100%;
+    margin: auto 0;
+    z-index: 9999;
+    align-items: center;
+}
+
+.controlButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--neutral-white);
+    transition: 250ms ease-out;
+    border: none;
+
+}
+
+.controlButton:hover{
+    cursor: pointer;
+    background: var(--neutral-light-grayish-blue);
+}
+
+.next{
+    padding-left: 0.2rem;
+}
+.prev{
+    padding-right: 0.2rem;
+}
+
+.lightbox{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
 @media screen and (min-width: 64rem) {
