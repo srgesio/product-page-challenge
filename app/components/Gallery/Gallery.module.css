@@ -68,6 +68,30 @@
     z-index: 9999;
     align-items: center;
 }
+.lightbox .controlGallery{
+    padding: 0;
+    width:auto;
+    left: -1.5rem;
+    right: -1.5rem;
+}
+
+.lightbox .lightboxCloseButton{
+    background: transparent;
+    color: var(--neutral-white);
+    border: none;
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    font-size: 2rem;
+    transition: 250ms ease-out;
+    cursor: pointer;
+
+}
+
+.lightbox .lightboxCloseButton:hover{
+    color: var(--primary);
+
+}
 
 .controlButton{
     display: flex;
@@ -96,14 +120,29 @@
 
 .lightbox{
     background: rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+}
+
+.galleryLightboxContainer{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.galleryLightboxImage{
+    border-radius: 1rem;
+}
+
+.gallerySwipper{
+    position: unset;
 }
 
 @media screen and (min-width: 64rem) {

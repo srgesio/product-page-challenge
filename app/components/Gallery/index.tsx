@@ -39,13 +39,13 @@ export function Gallery() {
             {isLightboxOpen && <div className={styles.lightbox}>
                 <div className={styles.galleryLightboxContainer} ref={modalRef}>
                     <button
-                        className={styles.closeLightbox}
+                        className={styles.lightboxCloseButton}
                         onClick={() => setIsLightboxOpen(false)}>
                         <CloseIcon />
                     </button>
                     <Swiper
                         slidesPerView={1}
-
+                        className={styles.gallerySwipper}
                         pagination={{ clickable: true }}
                         loop
 
